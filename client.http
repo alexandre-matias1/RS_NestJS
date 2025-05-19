@@ -34,3 +34,15 @@ POST {{baseUrl}}/questions
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
+{
+  "title": "O neymar ta falindo o Santastico?",
+  "content": "Baseado nas informações do Leo dias"
+}
+
+###
+
+# @name fetch_recent_questions
+
+GET  {{baseUrl}}/questions?page=1
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
